@@ -1,0 +1,22 @@
+# Configuration
+.env
+config/local.sh
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Clés SSH
+*.key
+*.pem
+id_rsa*
+*.pub
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

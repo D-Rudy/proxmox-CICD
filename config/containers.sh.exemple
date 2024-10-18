@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Configuration des conteneurs
+# Format: ["nom-conteneur"]="RAM(MB) CPU CAPACITÉ(GB) IP GATEWAY"
+declare -A containers=(
+    # Service CI/CD
+    ["jenkins-pipeline"]="3072 2 30 192.168.1.10 192.168.1.1"
+
+    # Bases de données
+    ["postgresql-dev"]="512 1 20 192.168.1.11 192.168.1.1"
+    ["postgresql-recette"]="512 1 25 192.168.1.12 192.168.1.1"
+    ["postgresql-prod"]="512 1 50 192.168.1.13 192.168.1.1"
+
+    # Serveurs d'applications
+    ["srv-dev"]="512 1 15 192.168.1.14 192.168.1.1"
+    ["srv-recette"]="512 1 15 192.168.1.15 192.168.1.1"
+    ["srv-prod"]="512 1 15 192.168.1.16 192.168.1.1"
+
+    # Services annexes
+    ["registry"]="512 1 50 192.168.1.17 192.168.1.1"
+    ["gitlab"]="2048 2 50 192.168.1.18 192.168.1.1"
+)
+
+# Documentation des paramètres :
+#
+# Format: ["nom-conteneur"]="RAM CPU CAPACITÉ IP GATEWAY"
+#
+# RAM     : Mémoire en MB (minimum recommandé: 512)
+# CPU     : Nombre de cœurs (minimum recommandé: 1)
+# CAPACITÉ : Espace disque en GB
+# IP      : Adresse IP du conteneur (format: xxx.xxx.xxx.xxx)
+# GATEWAY : Passerelle réseau (généralement l'IP du routeur)
+#
+# Exemples de configurations typiques :
+#
+# Petit conteneur (services légers):
+# ["service-leger"]="512 1 10 192.168.1.20 192.168.1.1"
+#
+# Conteneur moyen (applications web):
+# ["app-web"]="1024 2 20 192.168.1.21 192.168.1.1"
+#
+# Gros conteneur (bases de données, CI/CD):
+# ["database"]="4096 4 100 192.168.1.22 192.168.1.1"
