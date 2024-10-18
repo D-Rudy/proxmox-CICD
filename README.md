@@ -39,11 +39,11 @@ RAM: 512
 
 ***
 
-### conteneur serveur BDD(postgre) DEV
-Debian 11
-hostname: postgresql-dev
-RAM: 512
-1 CPU
+### conteneur serveur BDD(postgre) Dev\n
+Debian 11\n
+hostname: postgresql-dev\n
+RAM: 512\n
+1 CPU\n
 
 ***
 
