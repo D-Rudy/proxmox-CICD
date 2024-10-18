@@ -15,3 +15,14 @@ Script automatisé pour déployer des conteneurs LXC sur Proxmox VE avec une con
 ```bash
 git clone https://github.com/D-Rudy/proxmox-CICD.git
 cd proxmox-CICD
+cp config/containers.sh.exemple config/containers.sh
+cp .env.exemple .env
+```
+## Mettre vos valeurs et vos paramètre perso dans ces fichier
+
+🔒 Sécurité
+
+Ne commitez JAMAIS de fichiers .env ou config contenant des données sensibles
+Utilisez des clés SSH plutôt que des mots de passe
+Les conteneurs sont créés non privilégiés par défaut
+Vérifiez et adaptez les permissions réseau selon vos besoins
