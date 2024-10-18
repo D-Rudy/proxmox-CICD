@@ -46,7 +46,7 @@ Cette chaine CI/CD est déployée sur Proxmox VE 8, une plateforme de virtualisa
 
 ### Spécificités
 - **Dev**: Hostname: srv-dev
-- **Stage**: Hostname: srv-recette
+- **Recette**: Hostname: srv-recette
 - **Prod**: Hostname: srv-prod
 
 **Justification détaillée**: 
