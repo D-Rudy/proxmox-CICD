@@ -26,3 +26,7 @@ Ne commitez JAMAIS de fichiers .env ou config contenant des données sensibles
 Utilisez des clés SSH plutôt que des mots de passe
 Les conteneurs sont créés non privilégiés par défaut
 Vérifiez et adaptez les permissions réseau selon vos besoins
+
+
+## TODO:
+Script pour chaque conteneur
