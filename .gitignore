@@ -1,6 +1,6 @@
 # Configuration
 .env
-config/local.sh
+config/containers.sh
 
 # Logs
 logs/*
