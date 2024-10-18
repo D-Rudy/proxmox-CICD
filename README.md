@@ -1,11 +1,11 @@
 # proxmox-CICD
 
-### conteneur Jenkins:
-Debian 11
-Hostname= jenkins-pipeline
-ip:
-RAM: 3072
-2 CPU
+### conteneur Jenkins:  
+Debian 11  
+Hostname= jenkins-pipeline  
+ip:  
+RAM: 3072  
+2 CPU  
 Ext:    - java default-jre sur docker
 		- jenkins sans docker (éviter docker in docker)
 		- ansible / sshpass /gpg -> pipelining = true && allow readable tmp = true sans docker
